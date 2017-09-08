@@ -6,6 +6,40 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+  <ion-list>
+    <ion-list-header>About UndocuHacks</ion-list-header>
+    <ion-item-group padding-horizontal>
+      <p>UndocuHacks 2017 will be the first of its kind immigrant youth-led hackathon in the country! UndocuHacks will serve as a collaborative meeting platform and bring together professionals in the tech industry and people directly affected by immigration policies to develop technology tools of protection, education, healing, and empowerment.</p>
+      <p>While everyone is welcome to apply, we highly encourage people who are currently affected by the country’s immigration policies and the lack of health insurance to apply. If you are an immigrant and have been using social media platforms and technology tools to organize your community and advocate for immigrant rights, we would love for you to join us on this amazing journey!</p>
+    </ion-item-group>
 
+    <ion-list-header>Our Values</ion-list-header>
+    <ion-item-group padding>
+      <h5>Inclusivity</h5>
+      <p>
+      We strive to foster a supportive environment that is welcoming for people of all backgrounds, ethnicities, immigration status, experiences, technical backgrounds, and political opinions.
+      </p>
+
+      <h5>Community Empowerment</h5>
+      <p>Connect and collaborate with other like-minded people and take action.</p>
+      <p>
+        We believe in the power of compassion, understanding the hardships in our communities, and using our voice and resources to speak up against injustices and bring about long-lasting change. United we stand, divided we fall.
+      </p>
+
+      <h5>Learning</h5>
+      <p>
+        We will do our best to provide a conducive learning environment. You will get personalized help and guidance from an amazing group of mentors comprised of the best and brightest in the tech, health advocacy, and immigrant rights fields.
+      </p>
+    </ion-item-group>
+
+    <ion-list-header>Partners / Supporters</ion-list-header>
+    <ion-item-group padding>
+      <ion-row>
+        <ion-col *ngFor="let partner of partners" text-center>
+          <img src="/assets/images/{{partner.logo}}" (click)="visitLink(partner.url)" width="95">
+        </ion-col>
+      </ion-row>
+    </ion-item-group>
+  </ion-list>
 </ion-content>

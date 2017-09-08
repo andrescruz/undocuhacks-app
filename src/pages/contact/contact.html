@@ -1,17 +1,27 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Contact Us
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
+    <ion-list-header>Any Questions?</ion-list-header>
+    <ion-item (click)="emailUs()">
+      <ion-icon name="mail" color="primary" item-left></ion-icon>
+      Email us
+    </ion-item>
+
+    <ion-list-header>Connect with us</ion-list-header>
     <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
+      <ion-icon name="logo-twitter" color="twitter" item-left></ion-icon>
+      @undocumedia
+    </ion-item>
+    <ion-item>
+      <ion-icon name="logo-facebook" color="facebook" item-left></ion-icon>
+      /undocumedia
     </ion-item>
   </ion-list>
 </ion-content>

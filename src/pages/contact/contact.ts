@@ -11,4 +11,8 @@ export class ContactPage {
 
   }
 
+  emailUs() {
+    window.location.href = 'mailto:undocuhacks2017@undocumedia.org';
+  }
+
 }
